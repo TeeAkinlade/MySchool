@@ -1,11 +1,11 @@
-import { Logo } from "./Logo";
+// import { Logo } from "./Logo";
 import { SideBarRoutes } from "./SideBarRoutes";
 
 const Sidebar = () => {
     return ( 
-        <div className="h-full border-r flex-col overflow-y-autobg-white shadow-sm">
+        <div className="h-full border-r flex-col overflow-y-auto bg-white shadow-sm">
             <div className="p-6">
-                <Logo />
+                {/* <Logo /> */}
             </div>
             <div className="flex flex-col w-full">
                 <SideBarRoutes />

@@ -6,7 +6,7 @@ export default function Home() {
       <UserButton 
         afterSignOutUrl="/"
       />
-      <p>HelLo stu</p>
+      <p>HelLo student</p>
     </main>
   );
 }
