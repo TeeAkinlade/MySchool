@@ -81,19 +81,19 @@ const ChapterList = ({ items, onReorder, onEdit }: ChaptersListProps) => {
                       />
                     </div>
                     {chapter.title}
-                    <div className="ml-auto pr-2 flex items-start gap-x-2">
+                    <div className="ml-auto pr-2 flex items-center gap-x-2">
                       {chapter.isFree && (
-                        <Badge>
+                        <p className="px-3 py-1 rounded-2xl text-white text-sm">
                           Free
-                        </Badge>
+                        </p>
                       )}
-                        <Badge
-                          className={cn("bg-slate-500",
+                        <p
+                          className={cn("bg-slate-500 px-3 py-1 text-white rounded-2xl text-sm",
                             chapter.isPublished && "bg-sky-700"
                           )}
                         >
                           {chapter.isPublished ? "Published" : "Draft"}
-                        </Badge>
+                        </p>
                         <Pencil
                           onClick={() => onEdit(chapter.id)}
                           className="w-4 h-4 cursor-pointer hover:opacity-75 transition"
